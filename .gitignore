@@ -3,3 +3,6 @@ node_modules
 
 # build artefacts
 public
+
+# random files
+.DS_Store
