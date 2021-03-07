@@ -1,3 +1,5 @@
 {
-    "layout": "book"
+    "layout": "book",
+    "bookshop_id": "14025",
+    "bookshop_base_url": "https://bookshop.org/a/14025/"
 }
