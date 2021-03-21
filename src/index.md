@@ -5,9 +5,8 @@ layout: base.njk
 
 Hello
 
+<ul>
 {% for post in collections.book %}
-  {{ post.data.title }}
-  {{ post.url }}
-  {{ post.data.date }}
-  {{ post.data.tags }}
+  <li>{{ post.data.date }} <a href="{{ post.url}}">{{ post.data.title }}</a> {{ post.data.tags }}</li>
 {% endfor %}
+</ul>
