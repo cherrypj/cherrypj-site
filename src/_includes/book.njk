@@ -10,10 +10,10 @@ tags: book
 
   <div class="layout">
     <div>
-      <script src="https://bookshop.org/widgets.js" data-type="book" data-affiliate-id="{{bookshop_id}}" data-sku="{{upc}}"></script>
+      {{ content | safe}}
     </div>
     <div>
-      {{ content | safe}}
+      <script src="https://bookshop.org/widgets.js" data-type="book" data-affiliate-id="{{bookshop_id}}" data-sku="{{upc}}"></script>
     </div>
 
 </article>

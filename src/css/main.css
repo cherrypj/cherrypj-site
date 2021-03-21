@@ -159,4 +159,22 @@
   /* Book Styling */
   article.book .layout {
     display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  article.book .layout div:first {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  article.book .layout div:last {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  article.book h2.span {
+    font-style: italic;
+    font-size: 50%;
+    font-weight: normal;
+    display: block;
   }
