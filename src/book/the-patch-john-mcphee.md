@@ -1,6 +1,7 @@
 ---
 title: The Patch
 author: John McPhee
+date: "2021-03-08"
 upc: 9781250234889
 rating: 4
 ---
