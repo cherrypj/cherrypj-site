@@ -2,4 +2,13 @@
 layout: base.njk
 ---
 
-<article>{{ content | safe}}</article>
+<article>
+
+  <h2><a href="{{bookshop_base_url}}{{upc}}">{{title}}</a> by {{author}}</h2>
+  <p>Rating: {{rating}} stars</p>
+
+  <script src="https://bookshop.org/widgets.js" data-type="book" data-affiliate-id="{{bookshop_id}}" data-sku="{{upc}}"></script>
+
+  {{ content | safe}}
+
+</article>
