@@ -156,3 +156,7 @@
     }
   }
   
+  /* Book Styling */
+  article.book .layout {
+    display: grid;
+  }

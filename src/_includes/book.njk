@@ -1,14 +1,19 @@
 ---
 layout: base.njk
+tags: book
 ---
 
-<article>
+<article class="{{tags}}">
 
-  <h2><a href="{{bookshop_base_url}}{{upc}}">{{title}}</a> by {{author}}</h2>
-  <p>Rating: {{rating}} stars</p>
+  <h2><a href="{{bookshop_base_url}}{{upc}}">{{title}}</a> <span>by {{author}}</span></h2>
+  <p class="rating">Rating: {{rating}} stars</p>
 
-  <script src="https://bookshop.org/widgets.js" data-type="book" data-affiliate-id="{{bookshop_id}}" data-sku="{{upc}}"></script>
-
-  {{ content | safe}}
+  <div class="layout">
+    <div>
+      <script src="https://bookshop.org/widgets.js" data-type="book" data-affiliate-id="{{bookshop_id}}" data-sku="{{upc}}"></script>
+    </div>
+    <div>
+      {{ content | safe}}
+    </div>
 
 </article>
